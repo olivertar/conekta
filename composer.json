@@ -1,0 +1,25 @@
+{
+    "name": "conekta/module-conekta-payments",
+    "description": "Conekta payment gateway",
+    "require": {
+        "php": ">=7.2",
+        "magento/module-sales": "100.0.*",
+        "magento/module-checkout": "100.0.*",
+        "magento/module-payment": "100.0.*",
+        "magento/framework": "100.0.*",
+        "magento/magento-composer-installer": "100.0.*",
+        "conekta/conekta-php": "*"
+    },
+    "type": "magento2-module",
+    "version": "3.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Conekta\\Payments\\": ""
+        }
+    }
+}
